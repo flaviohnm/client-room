@@ -14,7 +14,7 @@ export class CreateRoomComponent implements OnInit {
   submitted = false;
 
   constructor(private roomService: RoomService,
-    private router: Router) { }
+              private router: Router) { }
 
   ngOnInit() {
   }
@@ -33,7 +33,7 @@ export class CreateRoomComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    this.save();    
+    this.save();
   }
 
   gotoList() {

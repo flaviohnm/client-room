@@ -15,14 +15,15 @@ export class UpdateRoomComponent implements OnInit {
   submitted = false;
 
 
-  constructor(private route: ActivatedRoute,private router: Router,
-    private roomService: RoomService) { }
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private roomService: RoomService) { }
 
   ngOnInit() {
     this.room = new Room();
 
     this.id = this.route.snapshot.params['id'];
-    
+
     this.roomService.getRoom(this.id)
       .subscribe(data => {
         console.log(data)
@@ -38,7 +39,7 @@ export class UpdateRoomComponent implements OnInit {
   }
 
   onSubmit() {
-    this.updateRoom();    
+    this.updateRoom();
   }
 
   gotoList() {

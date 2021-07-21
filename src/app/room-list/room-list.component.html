@@ -19,9 +19,10 @@
             <td>{{room.date}}</td>
             <td>{{room.startHour}}</td>
             <td>{{room.endHour}}</td>
-            <td><button (click)="deleteRoom(room.id)" class="btn btn-danger">Delete</button>
-                <button (click)="updateRoom(room.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
-                <button (click)="roomDetails(room.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            <td>
+              <button (click)="roomDetails(room.id)" class="btn btn-primary" style="margin-left: 10px">Details</button>
+              <button (click)="updateRoom(room.id)" class="btn btn-success" style="margin-left: 10px">Update</button>
+              <button (click)="deleteRoom(room.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
             </td>
           </tr>
         </tbody>

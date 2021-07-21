@@ -3,7 +3,7 @@
   "cli": {
     "analytics": "53bfacc8-3c75-49ca-bc59-341bbe04a83d"
   },
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "client-room": {
@@ -28,10 +28,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"            ],
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -123,8 +124,13 @@
               "devServerTarget": "client-room:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "client-room"
 }

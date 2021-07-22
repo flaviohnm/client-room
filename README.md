@@ -1,47 +1,68 @@
-# ClientRoom
+# Gerenciador de Sala de Reuniã | Phase: Front-End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.7.
+## CRUD Sala de Reunião
 
-## Development server
+## 🚀💻 Technologies & Tools
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript) ![Angular](https://img.shields.io/badge/-Angular-red?style=flat-square&logo=angular) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)  ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)  ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 
-## Code scaffolding
+## :pencil:Aula 1: Configurando Ambiente - Frontend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Links
 
-## Build
+- Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
+- Visual Studio Code - [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- Angular CLI - [https://angular.io/cli](https://angular.io/cli)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 💻 Integração com a API
 
-## Running unit tests
+### :pencil:Entendo um pouco melhor sobre Javascript/Typescript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Entendendo o Hoisting do javascript - [https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448](https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448)
+- Um pouco sobre Promises e assincronismo - [https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
+- Template Strings / Interpolação de Strings - [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals)
+- Tipos do Typescript - [https://bognarjunior.wordpress.com/2018/09/16/typescript-tipos-de-dados/](https://bognarjunior.wordpress.com/2018/09/16/typescript-tipos-de-dados/)
 
-## Running end-to-end tests
+### :pencil:Bindings e diretivas do Angular
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Property Binding - [https://angular.io/guide/property-binding](https://angular.io/guide/property-binding)
+- Binding de atributos - [https://angular.io/guide/attribute-binding](https://angular.io/guide/attribute-binding)
+- Inputs e Outputs - [https://angular.io/guide/inputs-outputs](https://angular.io/guide/inputs-outputs)
+- Diretivas Básicas - [https://angular.io/guide/built-in-directives](https://angular.io/guide/built-in-directives)
 
-## Further help
+## :pencil: Publicando o Projeto no GitHub Pages
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Links
 
-## verificar vesao nodejs
-node -v
+- GitHub - [https://github.com/](https://github.com/)
+- angular-cli-ghpages - [https://github.com/angular-schule/angular-cli-ghpages/#readme](https://github.com/angular-schule/angular-cli-ghpages/#readme)
 
-### verificar versao npm 
-npm -v
+### 💻Configuração do parametro deploy no Package.json
 
-### instalar angular 9
-npm install -g @angular/cli@9.0.0-rc.7
+```json
+"scripts": {
+	....
+	"deploy":  "ng deploy --base-href=https://<seu-usuario>.github.io/<repositorio>/",
+	...
+}
+```
 
-### verificar versao angular
-ng --version
+Será necessário substituir o `<seu-usuário>` pelo seu nome de usuário do Github e o `<repositorio>` pelo nome do repositório criado anteriormente.
 
-### criar projeto 
-ng new client-room
+### 💻Comando do Angular CLI para realizar o deploy
 
+      npm run deploy
 
+### 🚀Confira o projeto publicado
+| Fase      | Plataforma | Repo                                                | Link                                                        |
+| --------- | ---------- | --------------------------------------------------- | ----------------------------------------------------------- |
+| Back-End  | Heroku     | [Git](https://github.com/flaviohnm/salareuniao-api) | [Api](https://saladereuniao-api.herokuapp.com/api/v1/rooms) |
+| Front-End | Git Pages  | [Git](https://github.com/flaviohnm/client-room)     | [Site](https://flaviohnm.github.io/client-room/rooms)       |
 
+## :pencil:Comentários sobre o projeto
 
+Esse projeto faz parte do BootCamp Santander Full Stack Developer patrocinado [Banco Santander](https://www.santander.com.br/) e em conjunto com plataforma de ensino [Digital Innovation One Inc](https://digitalinnovation.one/) e teve como objetivo uma API-Rest para integrar com a interface de Gerenciamento de Salas de Reunião.
 
+## :man:About me  :coffee: :airplane: :ticket: 
+
+[![Linkedin Badge](https://img.shields.io/badge/-flaviohnm-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/flaviohnm/)](https://www.linkedin.com/in/flaviohnm/)   [![Gmail Badge](https://img.shields.io/badge/-flaviohnm@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:flaviohnm@gmail.com)](mailto:flaviohnm@gmail.com)
